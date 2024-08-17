@@ -39,8 +39,8 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v4
       with:
-        context: ./Module-10/
-        file: ./Module-10/Dockerfile
+        context: ./module-10/
+        file: ./module-10/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/inclass:latest
 
